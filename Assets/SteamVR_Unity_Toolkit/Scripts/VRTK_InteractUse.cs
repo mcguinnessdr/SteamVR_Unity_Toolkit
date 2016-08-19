@@ -50,6 +50,11 @@ namespace VRTK
             return usingObject;
         }
 
+        public void ForceUse(GameObject obj)
+        {
+            UseInteractedObject(obj);
+        }
+
         public void ForceStopUsing()
         {
             if (usingObject != null)
